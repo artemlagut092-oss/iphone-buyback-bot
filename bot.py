@@ -14,7 +14,7 @@ from aiogram.types import (
     ReplyKeyboardRemove
 )
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 ADMIN_ID_RAW = os.getenv("ADMIN_ID", "").strip()
 
 if not BOT_TOKEN or not ADMIN_ID_RAW:
